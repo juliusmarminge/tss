@@ -1,0 +1,54 @@
+{
+  "name": "tanstack-router-example-react-start-basic",
+  "private": true,
+  "sideEffects": false,
+  "packageManager": "pnpm@9.3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "lint": "prettier --check '**/*' --ignore-unknown && eslint",
+    "lint:fix": "prettier --write '**/*' --ignore-unknown --list-different && eslint --fix",
+    "push": "drizzle-kit push",
+    "seed": "pnpm dlx tsx app/db/seed.ts",
+    "studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.6.2",
+    "@tanstack/react-router": "^1.38.1",
+    "@tanstack/router-devtools": "^1.38.1",
+    "@tanstack/router-vite-plugin": "^1.38.0",
+    "@tanstack/start": "^1.38.1",
+    "@trpc/server": "11.0.0-rc.403",
+    "drizzle-orm": "^0.31.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vinxi": "^0.3.11",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+    "@tailwindcss/vite": "4.0.0-alpha.16",
+    "@types/node": "^20.12.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "drizzle-kit": "^0.22.7",
+    "eslint": "^9.5.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.4",
+    "tailwindcss": "4.0.0-alpha.16",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "8.0.0-alpha.30",
+    "vite": "^5.3.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "plugins": [
+      "@ianvs/prettier-plugin-sort-imports",
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}
